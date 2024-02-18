@@ -1,0 +1,415 @@
+:root {
+    --fuente-ppal: 'Inter', sans-serif;
+    --color-Body: #e5e5e5;
+    --color-Blanco: #fff;
+    --color-Dark_blue100: #609ed4;
+    --color-Dark_blue200: #356ea9;
+    --color-Dark_blue300: #0a3871;
+    --color-Dark_blue400: #072b61;
+    --color-Dark_blue500: #052051;
+    --color-Gray100: #ced4da;
+    --color-Gray200: #abd5bd;
+    --color-Gray300: #868e96;
+    --color-Gray400: #495057;
+    --color-Gray500: #343a40;
+    --color-Light_Blue100: #f3f5fc;
+    --color-Light_Blue200: #eff1fa;
+    --color-Light_Blue300: #d8dfe8;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuente-ppal);
+    font-size: 1.6rem;
+    background-color: var(--color-Body);
+    max-width: 140rem;
+    min-width: 20rem;
+}
+
+.header {
+    /* width: 95%;
+    width: 120rem; */
+    margin: 0 auto;
+}
+
+.header img {
+    width: 12rem;
+    height: 4.8rem;
+    color: var(--color-Dark_blue300);
+    margin: 4rem 0 0 4rem;
+}
+
+main {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.contenedor-input {
+    display: block;
+    /* padding: 16.8rem 0 0 10rem; */
+}
+
+.contenedor-caja-texto{
+    padding-top: 16.8rem;
+    width: 57.7rem;
+    height: 4.8rem;
+    padding-left: 10rem;
+}
+
+.caja-texto{
+    width: 57.7rem;
+    height: auto;
+    border: none;
+    background-color: var(--color-Body);
+    cursor: pointer;
+    color: var(--color-Dark_blue300);
+    font-size: 3.2rem;
+    line-height: 150%;
+    font-weight: 400;
+    overflow: hidden;
+    outline: none;
+    resize: none;
+    padding: 0;
+}
+
+.caja-texto::placeholder{
+    color: var(--color-Dark_blue300);
+}
+
+.alerta {
+    display: flex;
+    color: var(--color-Gray400);
+    gap: 0.8rem;
+    width: 22.9rem;
+    height: 1.8rem;
+    align-items: center;
+    margin-top: 62rem;
+    margin-left: 10rem;
+}
+
+.alerta img{
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.alerta p{
+    width: 20.5rem;
+    height: 1.8rem;
+    opacity: 80%;
+    font: var(--fuente-ppal);
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 150%;
+    margin: 0;
+}
+
+.contenedor-botones {
+    display: flex;
+    width: 68rem;
+    height: 6.7rem;
+    margin-left: 10rem;
+    gap: 2.4rem;
+    padding-top: 1.5rem;
+}
+
+.btn-encriptar{
+    width: 32.8rem;
+    height: 6.7rem;
+    padding: 0;
+    border-radius: 2.4rem;
+    padding: 0;
+    background-color: var(--color-Dark_blue300);
+    color: var(--color-Blanco);
+    font-weight: 400; 
+    border: none;   
+    cursor: pointer; 
+}
+
+.btn-encriptar:hover{
+    background-color: var(--color-Dark_blue400);
+    color: var(--color-Blanco); 
+}
+
+.btn-desencriptar{
+    width: 32rem;
+    height: 6.7rem; 
+    padding: 0;
+    border-radius: 2.4rem;
+    line-height: 1.936rem;
+    background-color: var(--color-Gray100);
+    color: var(--color-Dark_blue300);
+    font-weight: 400; 
+    border: 0.1rem solid var(--color-Dark_blue300);    
+    cursor: pointer;  
+}
+
+.btn-desencriptar:hover{
+    background-color: var(--color-Gray300);
+    color: var(--color-Dark_blue400);  
+    border: 0.1rem solid var(--color-Dark_blue500);   
+}
+
+.aside {
+    margin-left: 5rem;
+    background-color: var(--color-Blanco);
+    width: 40rem;
+    height: 94.4rem;
+    border-radius: 3.2rem;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.contenedor-muneico {
+    margin-top: 25rem;
+    width: 33.6rem;
+    height: 30.4rem;
+}
+
+.contenedor-parrafo {
+    width: 33.6rem;
+    height: 12.2rem;
+    padding-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin: 0 auto;
+}
+
+.contenedor-parrafo h4{
+    width: 33.6rem;
+    height: 5.8rem;
+    color: var(--color-Gray500);    
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 120%; 
+    text-align: center;
+    margin: 0;   
+}
+
+.contenedor-parrafo p{
+    width: 33.6rem;
+    height: 4.8rem;
+    color: var(--color-Gray400);
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 150%;
+    margin: 0;
+}
+
+.conteneor-resultado {
+    display: inline-block;
+    margin: 0 auto;
+    width: 33.6rem;
+    height: 78.1rem;
+    padding: 0;
+}
+
+.contenedor-copiar {
+    display: flex;
+    width: 33.6rem;
+    height: 6.7rem;
+    padding-top: 14rem;
+    margin: 0 auto;
+}
+
+.contenedor-resultado {
+    z-index: 2;
+    position: absolute;
+    top: 110px;
+    left: 900px;
+    width: 33.6rem;
+    height: 78.1rem;
+}
+
+.contenedor-resultado textarea{
+    width: 33.6rem;
+    height: 78.1rem;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+    overflow: hidden;
+    outline: none;
+    line-height: 150%;
+    font-size: 2.4rem;
+    color: var(--color-Gray400);
+}
+
+.btn-copiar {
+    width: 32.8rem;
+    height: 6.7rem; 
+    border-radius: 2.4rem;
+    border: 1px solid var(--color-Dark_blue300);
+    color: var(--color-Dark_blue300);
+    background-color: var(--color-blanco);
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 2.4rem;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #000;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+.ocultar{
+    visibility: hidden;
+}
+
+@media (max-width: 768px) { 
+    .contenedor-input{
+        margin-bottom: 5rem;
+    }
+    main{
+        width: 80%;
+        display: block;
+        align-items: center;
+    }
+    .header img {
+        width: 3.1rem;
+        height: 4.9rem;
+    }
+    .contenedor-caja-texto{
+        padding-top: 24rem;
+        width: 68.8rem;
+        height: 4.8rem;
+        padding-left: 4rem;
+    }
+    .alerta {
+        margin-left: 4rem;
+    }
+    .contenedor-botones {
+        margin-left: 4rem;
+    }
+    .aside {
+        margin-left: 4rem;
+        /*margin-top: -18rem; */
+        width: 64.8rem;
+        height: 34.3rem;
+    }
+    .contenedor-muneico {
+        display: none;
+    }
+    .contenedor-parrafo {
+        width: 62.4rem;
+        height: 6.9rem;
+    }
+    .contenedor-parrafo h4 {
+        width: 62.4rem;
+        height: 2.9rem;
+    }
+    .contenedor-parrafo p {
+        width: 62.4rem;
+        height: 2.4rem;
+    }
+    .contenedor-resultado {
+        z-index: 2;
+        position: absolute;
+        top: 110rem;
+        left: 5rem;
+        width: 62.4rem;
+        height: 18rem;
+    }
+    .contenedor-resultado textarea{
+        width: 62.4rem;
+        height: 18rem;
+    }
+}
+
+@media (max-width: 360px) { 
+    main{
+        width: 80%;
+        display: block;
+        align-items: center;
+    }
+    .header img {
+        margin-left: 1.6rem;
+        margin-top: 2.4rem;
+    }
+    .contenedor-caja-texto{
+        padding: 0;
+        margin-top: 15.2rem;
+        width: 34.3rem;
+        height: 4.8rem;
+        margin-left: 1.6rem;
+    }
+    .caja-texto {
+        width: 34.3rem;
+        height: 4.8rem;
+    }
+    .alerta {
+        margin-left: 1.6rem;
+    }
+    .contenedor-botones {        
+        margin-left: 1.6rem;
+        flex-direction: column;
+        width: 34.3rem;
+        height: 15.8rem;
+    }
+    .btn-encriptar, .btn-desencriptar {
+        width: 34.3rem;
+        height: 6.7rem;
+
+    }
+    .aside {
+        margin-left: 1.6rem;
+        width: 34.3rem;
+        height: 59.5rem;
+    }
+    .contenedor-muneico {
+        display: none;
+    }
+    .contenedor-parrafo {
+        margin: 3.2rem;
+        width: 26.3rem;
+        height: 12.2rem;
+    }
+    .contenedor-parrafo h4 {
+        width: 26.3rem;
+        height: 5.8rem;
+    }
+    .contenedor-parrafo p {        
+        width: 26.3rem;
+        height: 4.8rem;
+    }
+    .contenedor-resultado {
+        z-index: 2;
+        position: absolute;
+        top: 115rem;
+        left: 3rem;
+        width: 27.9rem;
+        height: 43.2rem;
+    }
+    .contenedor-resultado textarea{
+        width: 27.9rem;
+        height: 43.2rem;
+    }
+    .contenedor-copiar{
+        position: absolute;
+    }
+    .btn-copiar {
+        position: relative;
+        top: 20rem;
+        width: 27.9rem;
+        height: 6.7rem;
+        margin: 0 auto;
+    }
+    
+}
