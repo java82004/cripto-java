@@ -57,7 +57,6 @@ main {
 
 .contenedor-input {
     display: block;
-    /* padding: 16.8rem 0 0 10rem; */
 }
 
 .contenedor-caja-texto{
@@ -266,7 +265,9 @@ main {
     font-weight: 400;
     color: #000;
     bottom: 0;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .ocultar{
@@ -411,5 +412,4 @@ main {
         height: 6.7rem;
         margin: 0 auto;
     }
-    
 }
