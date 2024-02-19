@@ -30,7 +30,7 @@ body{
     font-family: var(--fuente-ppal);
     font-size: 1.6rem;
     background-color: var(--color-Body);
-    max-width: 140rem;
+    max-width: 100rem;
     min-width: 20rem;
 }
 
@@ -260,14 +260,17 @@ main {
 }
 
 .footer {
-    text-align: center;
+    /*text-align: center;
     font-size: 1.4rem;
     font-weight: 400;
     color: #000;
     bottom: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
+    font-size: 1.4rem;
+    height: 10vh;
+    text-align: center;
 }
 
 .ocultar{
@@ -301,7 +304,6 @@ main {
     }
     .aside {
         margin-left: 4rem;
-        /*margin-top: -18rem; */
         width: 64.8rem;
         height: 34.3rem;
     }
@@ -332,6 +334,9 @@ main {
         width: 62.4rem;
         height: 18rem;
     }
+    /*.footer {
+        visibility: hidden;
+    }*/
 }
 
 @media (max-width: 360px) { 
@@ -412,4 +417,7 @@ main {
         height: 6.7rem;
         margin: 0 auto;
     }
+    /*.footer {
+        visibility: hidden;
+    }*/
 }
