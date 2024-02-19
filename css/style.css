@@ -260,17 +260,14 @@ main {
 }
 
 .footer {
-    /*text-align: center;
+    text-align: center;
     font-size: 1.4rem;
     font-weight: 400;
     color: #000;
     bottom: 0;
     display: flex;
     justify-content: center;
-    align-items: center;*/
-    font-size: 1.4rem;
-    height: 10vh;
-    text-align: center;
+    align-items: center;
 }
 
 .ocultar{
@@ -298,6 +295,9 @@ main {
     }
     .alerta {
         margin-left: 4rem;
+    }
+    .alerta p{
+        width: 22.9rem;
     }
     .contenedor-botones {
         margin-left: 4rem;
@@ -334,9 +334,9 @@ main {
         width: 62.4rem;
         height: 18rem;
     }
-    /*.footer {
+    footer {
         visibility: hidden;
-    }*/
+    }
 }
 
 @media (max-width: 360px) { 
@@ -417,7 +417,7 @@ main {
         height: 6.7rem;
         margin: 0 auto;
     }
-    /*.footer {
+    footer {
         visibility: hidden;
-    }*/
+    }
 }
