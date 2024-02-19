@@ -301,10 +301,17 @@ main {
     }
     .contenedor-botones {
         margin-left: 4rem;
+        width: 68.8rem;
+    }
+    .btn-encriptar, .btn-desencriptar {
+        width: 33.2rem;
+        height: 6.7rem;
+
     }
     .aside {
+        box-sizing: border-box;
         margin-left: 4rem;
-        width: 64.8rem;
+        width: 68.8rem;
         height: 34.3rem;
     }
     .contenedor-muneico {
