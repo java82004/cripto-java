@@ -39,6 +39,5 @@ Si encuentras algún problema o tienes ideas para mejorar este proyecto, ¡no du
 
 <br>
 <p align="left">
-   <img src="https://img.shields.io/badge/STATUS-%20FINALIZADO-green">
+   <img src="https://img.shields.io/badge/STATUS-EN%20DESARROLLO-green">
 </p>
-

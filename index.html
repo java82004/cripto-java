@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="e5">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,46 +15,46 @@
 </head>
 <body>
     <header>
-        <div class="header">
+        <div class="contenedor">
             <img class="logo" src="img/Logo-5.svg" alt="Logo Alura">
         </div>
     </header>
     <main>
-        <section class="contenedor-input">
-            <div class="contenedor-caja-texto">
-                <textarea id="text-input" class="caja-texto" placeholder="Ingrese el texto aqui"cols="30" rows="10"></textarea>
+        <section class="seccion1">
+    
+             <div class="contenedor-caja">
+                    <textarea id="text-input" class="caja-texto" placeholder="Ingrese el texto aqui"cols="30" rows="10"></textarea>
             </div>
-        
+            
             <div class="alerta">
                 <img src="img/bi_exclamation-circle-fill.svg" alt="alerta">
                 <p>Solo letras minúsculas y sin acentos</p>
             </div>
-        
+            
             <div class="contenedor-botones">
                 <input class="btn-encriptar" type="button" value="Encriptar">
                 <input class="btn-desencriptar" type="button" value="Desencriptar">
             </div> 
         </section>
+        
+        <aside>            
     
-        <aside class="aside">            
-
             <div class="contenedor-muneico">
                 <img  id="fig" src="img/Muñeco.svg" alt="Imagen de muñeco">
             </div>
-    
+        
             <div id="parrafo" class="contenedor-parrafo">
                 <h4 id="output-heading">Ningún mensaje fue encontrado</h4>
                 <p id="output-text">Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
-    
+        
+            <div id="resultado" class="contenedor-resultado ocultar">
+                <textarea class="texto-resultado"></textarea>
+            </div>  
+
             <div class="contenedor-copiar">
                 <button class="btn-copiar ocultar" type="button">Copiar</button>
             </div>
-
-            <div id="resultado" class="contenedor-resultado ocultar">
-                <textarea class="texto-resultado"></textarea>
-            </div>
-    
         </aside>
 
     </main>
